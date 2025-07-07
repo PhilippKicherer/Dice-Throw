@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>AR Würfel mit Hiro Marker</title>
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ar.js@3.4.0/aframe/build/aframe-ar.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js">
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="dice-selector">
+    <button id="four_dice" disabled>d4</button>
+    <button id="six_dice">d6</button>
+    <button id="eight_dice" disabled>d8</button>
+    <button id="ten_dice" disabled>d10</button>
+    <button id="twenty_dice">d20</button>
+  </div>
+
+  <button id="roll">Roll Dice</button>
+
+
+
+  <a-scene embedded vr-mode-ui="enabled: false" arjs="sourceType: webcam; debugUIEnabled: false;"
+    physics="gravity: -9.8;">
+
+    <a-assets>
+      <img id="ground" src="ground.jpg">
+    </a-assets>
+
+    <a-asset-item id="6diceModel" src="d6/scene.gltf"></a-asset-item>
+    <a-asset-item id="20diceModel" src="d20/scene.gltf"></a-asset-item>
+
+    <a-marker-camera preset="hiro">
+      <a-plane static-body src="#ground" shader="flat" position="0 0 0" rotation="-90 0 0" scale="5 5 1"></a-plane>
+
+      <a-entity id="dice" gltf-model="#6diceModel" scale="0.5 0.5 0.5" position="0 5 0" dynamic-body></a-entity>
+    </a-marker-camera>
+
+    <!--a-entity camera></a-entity-->
+  </a-scene>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

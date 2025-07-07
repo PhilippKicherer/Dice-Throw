@@ -1,0 +1,8 @@
+Model Information:
+* title:	D20
+* source:	https://sketchfab.com/3d-models/d20-3149ade07b3f4e2092393f3d462d4d2e
+* author:	Aeri (https://sketchfab.com/aeri73)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

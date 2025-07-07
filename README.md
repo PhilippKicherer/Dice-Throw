@@ -1,2 +1,3 @@
-# DiceThrow
-Eine AR App, in der verschiedene Würfel ausgesucht und geworfen werden können
+# DrawingCube
+Ein Würfel, den man in Augmented Reality werfen kann
+

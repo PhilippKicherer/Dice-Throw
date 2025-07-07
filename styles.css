@@ -1,0 +1,31 @@
+#dice-selector button,
+#roll {
+    position: fixed;
+    bottom:20px;
+    left:50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    border:none;
+    border-radius: 8px;
+    background-color: #007BFF;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 9999;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#dice-selector {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 9999;
+}
