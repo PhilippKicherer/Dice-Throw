@@ -1,6 +1,6 @@
 // Buttons Referenzen
 
-const rollBtn = document.querySelector('roll');
+const rollBtn = document.querySelector('#roll');
 const d6Btn = document.querySelector('#six_dice');
 const d20Btn = document.querySelector('#twenty_dice');
 const dice = document.querySelector('#dice');
