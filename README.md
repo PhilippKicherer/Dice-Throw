@@ -1,3 +1,3 @@
-# DrawingCube
-Ein Würfel, den man in Augmented Reality werfen kann
+# Dice-Throw
+Würfel, die man in Augmented Reality werfen kann
 
